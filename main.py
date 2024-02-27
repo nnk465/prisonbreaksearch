@@ -12,7 +12,7 @@ for season_entry in os.scandir(scripts_dir):
             if episode_entry.is_file():
                 name = episode_entry.name
                 l.append(episode_entry.path)
-def main():
+while True:
     al = []
     search = re.sub(r'[^a-zA-Z&éçà123546789,.\'\"]', '', input().lower())
     if search == "999":
